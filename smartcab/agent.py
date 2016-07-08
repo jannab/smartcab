@@ -13,8 +13,8 @@ class LearningAgent(Agent):
         self.actions = ['forward', 'left', 'right', None]
         self.valid_states = ['forward, red light', 'turn left, red light', 'turn right, red light, someone left', 'turn right, red light, no one left', 'forward, green light', 'turn left, green light, someone oncoming', 'turn left, green light, no one oncoming', 'turn right, green light']
         self.qtable = self.qtable = [[0] * (len(self.actions))] * (len(self.valid_states))
-        self.learning_rate = 0.5
-        self.discount_factor = 0.5
+        self.learning_rate = 1.0
+        self.discount_factor = 0.01
 
     def reset(self, destination=None):
         self.planner.route_to(destination)
@@ -38,13 +38,21 @@ class LearningAgent(Agent):
         # Learn policy based on state, action, reward
         self.learn_policy(self.state, action, reward)
 
-        print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}".format(deadline, inputs, action, reward)  # [debug]
+        #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}".format(deadline, inputs, action, reward)  # [debug]
 
     def driving_agent(self):
-        #return random.choice(self.actions)
+        best_choice = random.choice(self.actions)
         index_state = self.get_state_index(self.state)
-        best_choice_index = self.qtable[index_state].index(max(self.qtable[index_state]))
-        return self.actions[best_choice_index]
+        best_choice_index = self.qtable[index_state].index(min(self.qtable[index_state]))
+        if self.qtable[index_state][best_choice_index] != 0:
+            best_choice = self.actions[best_choice_index]
+        # try to not get stuck that much
+        if self.qtable[index_state][best_choice_index] == 0:
+            best_choice = random.choice(self.actions)
+        if (best_choice_index == 3) & (self.qtable[index_state][best_choice_index] < 0.9):
+            best_choice = random.choice(self.actions)
+
+        return best_choice
 
     def update_state(self, inputs):
         if inputs['light'] == 'red':
@@ -77,6 +85,7 @@ class LearningAgent(Agent):
         estimate_optional_future_value = self.qtable[index_state][best_next_action_index]
 
         self.qtable[index_state][index_action] = old_value + self.learning_rate * (reward + self.discount_factor * estimate_optional_future_value - old_value)
+        #print self.qtable
 
     def get_state_index(self, state):
         index_state = 8
@@ -104,8 +113,8 @@ def run():
     # NOTE: You can set enforce_deadline=False while debugging to allow longer trials
 
     # Now simulate it
-    #sim = Simulator(e, update_delay=0.5, display=True)  # create simulator (uses pygame when display=True, if available)
-    sim = Simulator(e, update_delay=0.0, display=False)  # create simulator (uses pygame when display=True, if available)
+    sim = Simulator(e, update_delay=0.5, display=True)  # create simulator (uses pygame when display=True, if available)
+    #sim = Simulator(e, update_delay=0.0, display=False)  # create simulator (uses pygame when display=True, if available)
     # NOTE: To speed up simulation, reduce update_delay and/or set display=False
 
     sim.run(n_trials=100)  # run for a specified number of trials
