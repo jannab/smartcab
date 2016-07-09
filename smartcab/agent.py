@@ -10,12 +10,9 @@ class LearningAgent(Agent):
         super(LearningAgent, self).__init__(env)  # sets self.env = env, state = None, next_waypoint = None, and a default color
         self.color = 'red'  # override color
         self.planner = RoutePlanner(self.env, self)  # simple route planner to get next_waypoint
-        self.actions = ['forward', 'left', 'right', None]
-        self.valid_states = ['forward, red light', 'turn left, red light', 'turn right, red light, someone left', 'turn right, red light, no one left', 'forward, green light', 'turn left, green light, someone oncoming', 'turn left, green light, no one oncoming', 'turn right, green light']
-        self.qtable = self.qtable = [[0] * (len(self.actions))] * (len(self.valid_states))
-        self.learning_rate = 1.0
-        self.discount_factor = 0.01
-        self.totalReward = 0.0
+        self.totalReward = 0.0 # totals the rewards for every step
+        self.possible_actions = ['forward', 'left', 'right', None]
+
 
     def reset(self, destination=None):
         self.planner.route_to(destination)
@@ -28,7 +25,7 @@ class LearningAgent(Agent):
         deadline = self.env.get_deadline(self)
 
         # Update state
-        self.update_state(inputs)
+        state = self.update_state(inputs)
 
         # Select action according to your policy
         action = self.driving_agent()
@@ -37,73 +34,22 @@ class LearningAgent(Agent):
         reward = self.env.act(self, action)
         self.totalReward += reward
 
-        # Learn policy based on state, action, reward
-        self.learn_policy(self.state, action, reward)
+        # TODO: Learn policy based on state, action, reward
 
-        #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}".format(deadline, inputs, action, reward)  # [debug]
-        print "Total Reward: {}".format(self.totalReward)
-
-    def driving_agent(self):
-        best_choice = random.choice(self.actions)
-        index_state = self.get_state_index(self.state)
-        best_choice_index = self.qtable[index_state].index(max(self.qtable[index_state]))
-        if self.qtable[index_state][best_choice_index] != 0:
-            best_choice = self.actions[best_choice_index]
-        # try to not get stuck that much
-        if self.qtable[index_state][best_choice_index] == 0:
-            best_choice = random.choice(self.actions)
-        if (best_choice_index == 3) & (self.qtable[index_state][best_choice_index] < 0.9):
-            best_choice = random.choice(self.actions)
-
-        return best_choice
+        #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}, total reward = {}".format(deadline, inputs, action, reward, self.totalReward)  # [debug]
+        print "Total reward: {}".format(self.totalReward)
 
     def update_state(self, inputs):
-        if inputs['light'] == 'red':
-            if self.next_waypoint == 'forward':
-                self.state = self.valid_states[0]
-            elif self.next_waypoint == 'left':
-                self.state = self.valid_states[1]
-            elif self.next_waypoint == 'right':
-                if inputs['left'] != None:
-                    self.state = self.valid_states[2]
-                else:
-                    self.state = self.valid_states[3]
-        else:
-            if self.next_waypoint == 'forward':
-                self.state = self.valid_states[4]
-            elif self.next_waypoint == 'left':
-                if inputs['oncoming'] != None:
-                    self.state = self.valid_states[5]
-                else:
-                    self.state = self.valid_states[6]
-            elif self.next_waypoint == 'right':
-                self.state = self.valid_states[7]
+        """Updates the state label visable and returns the state"""
 
-    def learn_policy(self, state, action, reward):
-        index_state = self.get_state_index(state)
-        index_action = self.get_action_index(action)
+        state = [self.next_waypoint, inputs['light'], inputs['oncoming'], inputs['left']]
+        self.state = "Go: {}, lights: {}, oncoming: {}, left: {}".format(state[0], state[1], state[2], state[3])
 
-        old_value = self.qtable[index_state][index_action]
-        best_next_action_index = self.qtable[index_state].index(max(self.qtable[index_state]))
-        estimate_optional_future_value = self.qtable[index_state][best_next_action_index]
+    def driving_agent(self):
+        """Find the best next action"""
 
-        self.qtable[index_state][index_action] = old_value + self.learning_rate * (reward + self.discount_factor * estimate_optional_future_value - old_value)
-        #print self.qtable
-
-    def get_state_index(self, state):
-        index_state = 8
-        for i in range(len(self.valid_states)):
-            if self.valid_states[i] == state:
-                index_state = i
-        return index_state
-
-    def get_action_index(self, action):
-        index_action = 3
-        for i in range(len(self.actions)):
-            if self.valid_states[i] == action:
-                index_action = i
-        return index_action
-
+        best_choice = random.choice(self.possible_actions)
+        return best_choice
 
 
 def run():
@@ -112,12 +58,11 @@ def run():
     # Set up environment and agent
     e = Environment()  # create environment (also adds some dummy traffic)
     a = e.create_agent(LearningAgent)  # create agent
-    e.set_primary_agent(a, enforce_deadline=False)  # specify agent to track
+    e.set_primary_agent(a, enforce_deadline=True)  # specify agent to track
     # NOTE: You can set enforce_deadline=False while debugging to allow longer trials
 
     # Now simulate it
-    sim = Simulator(e, update_delay=0.5, display=True)  # create simulator (uses pygame when display=True, if available)
-    #sim = Simulator(e, update_delay=0.0, display=False)  # create simulator (uses pygame when display=True, if available)
+    sim = Simulator(e, update_delay=0.2, display=True)  # create simulator (uses pygame when display=True, if available)
     # NOTE: To speed up simulation, reduce update_delay and/or set display=False
 
     sim.run(n_trials=100)  # run for a specified number of trials
