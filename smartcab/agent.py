@@ -4,6 +4,7 @@ from planner import RoutePlanner
 from simulator import Simulator
 from math import log
 
+
 class LearningAgent(Agent):
     """An agent that learns to drive in the smartcab world."""
 
@@ -17,18 +18,26 @@ class LearningAgent(Agent):
         self.trial_reward = 0.0
         self.totalTime = 0
         self.first_deadline = self.env.get_deadline(self)
+        self.trialTime = 0
+        self.learning_rate = 0.0
+        self.discount_factor = 0.1
+        self.exploration_rate = 0
 
 
     def reset(self, destination=None):
+        print "{},{},{},{},{},{},{}".format(self.learning_rate,self.discount_factor,self.exploration_rate,self.first_deadline,self.trialTime,self.totalReward,self.trial_reward)
+
         self.planner.route_to(destination)
         self.first_deadline = self.env.get_deadline(self)
         self.trial_reward = 0.0
+        self.trialTime = 0
         # Prepare for a new trip; reset any variables here, if required
 
 
     def update(self, t):
         #print self.q_table
         self.totalTime += 1
+        self.trialTime += 1
 
         # Gather inputs
         self.next_waypoint = self.planner.next_waypoint()  # from route planner, also displayed by simulator
@@ -46,6 +55,8 @@ class LearningAgent(Agent):
 
         # Execute action and get reward
         reward = self.env.act(self, action)
+        if reward < 0:
+            print self.state
         self.totalReward += reward
         self.trial_reward += reward
 
@@ -64,7 +75,8 @@ class LearningAgent(Agent):
         # Take q values for the actual state plus every possible action
         decision_table = self.get_decision_table(state)
         # Exploration rate
-        exploration_rate = 0
+        self.exploration_rate = 0
+        exploration_rate = self.exploration_rate
         #exploration_rate = 0.3 * (float(deadline) / self.first_deadline)
         #exploration_rate = (log(deadline + 0.0001) ) * 0.015
         #print exploration_rate
@@ -100,10 +112,12 @@ class LearningAgent(Agent):
         return dict(zip(q_keys, q_initialization_values))
 
     def learning_policy(self, t, reward, state, action, q_value_present):
-        #learning_rate = 1.0
-        learning_rate = (1.0 / (t + 5)) + 0.75
+        #self.learning_rate = 1.0
+        #self.learning_rate = (1.0 / t) + 0.75
+        self.learning_rate = (1.0 / (t + 5)) + 0.75
+        learning_rate = self.learning_rate
         #discount_factor = 0.4
-        discount_factor = 0.1
+        discount_factor = self.discount_factor
         new_state = self.get_the_state(self.env.sense(self))
         new_decision_table = self.get_decision_table(new_state)
         max_future_reward, action = max((value, key) for key, value in new_decision_table.iteritems())
@@ -119,9 +133,15 @@ class LearningAgent(Agent):
     def get_decision_table(self, state):
         return {None: self.q_table[(state + (None,))], 'right': self.q_table[(state + ('right',))], 'left': self.q_table[(state + ('left',))], 'forward': self.q_table[(state + ('forward',))]}
 
+    #def evaluate_trial(self):
+
+
 
 def run():
     """Run the agent for a finite number of trials."""
+    #import sys
+    #f = open("learning_rate_4_5.csv", 'w')
+    #sys.stdout = f
 
     # Set up environment and agent
     e = Environment()  # create environment (also adds some dummy traffic)
@@ -135,6 +155,7 @@ def run():
 
     sim.run(n_trials=100)  # run for a specified number of trials
     # NOTE: To quit midway, press Esc or close pygame window, or hit Ctrl+C on the command-line
+    #f.close()
 
 
 if __name__ == '__main__':

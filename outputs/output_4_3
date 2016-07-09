@@ -1,0 +1,2069 @@
+Simulator.run(): Trial 0
+Environment.reset(): Trial set up with start = (4, 6), destination = (8, 2), deadline = 40
+RoutePlanner.route_to(): destination = (8, 2)
+Total reward: 0.0
+Total reward: -0.5
+Total reward: 1.5
+Total reward: 3.5
+Total reward: 3.5
+Total reward: 3.5
+Total reward: 3.0
+Total reward: 2.5
+Total reward: 2.5
+Total reward: 4.5
+Total reward: 6.5
+Total reward: 5.5
+Total reward: 4.5
+Total reward: 4.5
+Total reward: 4.0
+Total reward: 3.0
+Total reward: 3.0
+Total reward: 2.5
+Total reward: 4.5
+Total reward: 6.5
+Total reward: 6.0
+Total reward: 6.0
+Total reward: 5.0
+Total reward: 5.0
+Total reward: 4.5
+Total reward: 3.5
+Total reward: 3.5
+Total reward: 3.5
+Total reward: 3.0
+Total reward: 5.0
+Total reward: 7.0
+Total reward: 6.5
+Total reward: 6.0
+Total reward: 8.0
+Total reward: 10.0
+Total reward: 12.0
+Total reward: 14.0
+Total reward: 16.0
+Total reward: 15.5
+Total reward: 15.0
+Total reward: 17.0
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 1
+Environment.reset(): Trial set up with start = (5, 3), destination = (6, 6), deadline = 20
+RoutePlanner.route_to(): destination = (6, 6)
+Total reward: 16.5
+Total reward: 16.5
+Total reward: 16.0
+Total reward: 18.0
+Total reward: 20.0
+Total reward: 22.0
+Total reward: 24.0
+Total reward: 26.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 38.0
+Simulator.run(): Trial 2
+Environment.reset(): Trial set up with start = (2, 3), destination = (6, 3), deadline = 20
+RoutePlanner.route_to(): destination = (6, 3)
+Total reward: 40.0
+Total reward: 42.0
+Total reward: 44.0
+Total reward: 44.0
+Total reward: 43.5
+Total reward: 45.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 57.5
+Simulator.run(): Trial 3
+Environment.reset(): Trial set up with start = (6, 5), destination = (1, 5), deadline = 25
+RoutePlanner.route_to(): destination = (1, 5)
+Total reward: 57.5
+Total reward: 57.0
+Total reward: 59.0
+Total reward: 58.0
+Total reward: 57.0
+Total reward: 56.5
+Total reward: 56.0
+Total reward: 58.0
+Total reward: 58.0
+Total reward: 57.5
+Total reward: 57.5
+Total reward: 59.5
+Total reward: 59.0
+Total reward: 59.0
+Total reward: 59.0
+Total reward: 59.0
+Total reward: 61.0
+Total reward: 60.5
+Total reward: 60.5
+Total reward: 62.5
+Total reward: 64.5
+Total reward: 66.5
+Total reward: 66.5
+Total reward: 66.5
+Total reward: 68.5
+Total reward: 68.5
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 4
+Environment.reset(): Trial set up with start = (6, 3), destination = (3, 2), deadline = 20
+RoutePlanner.route_to(): destination = (3, 2)
+Total reward: 70.5
+Total reward: 72.5
+Total reward: 74.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 86.5
+Simulator.run(): Trial 5
+Environment.reset(): Trial set up with start = (3, 5), destination = (8, 3), deadline = 35
+RoutePlanner.route_to(): destination = (8, 3)
+Total reward: 86.5
+Total reward: 86.5
+Total reward: 86.5
+Total reward: 86.5
+Total reward: 86.5
+Total reward: 88.5
+Total reward: 88.5
+Total reward: 88.5
+Total reward: 88.5
+Total reward: 88.5
+Total reward: 90.5
+Total reward: 90.5
+Total reward: 92.5
+Total reward: 92.5
+Total reward: 92.5
+Total reward: 92.5
+Total reward: 94.5
+Total reward: 94.5
+Total reward: 94.5
+Total reward: 94.5
+Total reward: 96.5
+Total reward: 98.5
+Total reward: 98.5
+Total reward: 98.5
+Total reward: 98.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 110.5
+Simulator.run(): Trial 6
+Environment.reset(): Trial set up with start = (8, 6), destination = (5, 2), deadline = 35
+RoutePlanner.route_to(): destination = (5, 2)
+Total reward: 112.5
+Total reward: 112.5
+Total reward: 112.5
+Total reward: 112.5
+Total reward: 112.5
+Total reward: 112.5
+Total reward: 114.5
+Total reward: 116.5
+Total reward: 118.5
+Total reward: 120.5
+Total reward: 120.5
+Total reward: 120.5
+Total reward: 120.5
+Total reward: 120.5
+Total reward: 120.5
+Total reward: 122.5
+Total reward: 121.5
+Total reward: 121.5
+Total reward: 121.5
+Total reward: 121.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 133.5
+Simulator.run(): Trial 7
+Environment.reset(): Trial set up with start = (6, 5), destination = (4, 2), deadline = 25
+RoutePlanner.route_to(): destination = (4, 2)
+Total reward: 135.5
+Total reward: 135.0
+Total reward: 137.0
+Total reward: 139.0
+Total reward: 138.5
+Total reward: 140.5
+Total reward: 142.5
+Total reward: 144.5
+Total reward: 144.5
+Total reward: 144.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 156.5
+Simulator.run(): Trial 8
+Environment.reset(): Trial set up with start = (3, 6), destination = (5, 4), deadline = 20
+RoutePlanner.route_to(): destination = (5, 4)
+Total reward: 156.5
+Total reward: 156.5
+Total reward: 158.5
+Total reward: 158.5
+Total reward: 158.5
+Total reward: 158.5
+Total reward: 160.5
+Total reward: 162.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 174.5
+Simulator.run(): Trial 9
+Environment.reset(): Trial set up with start = (5, 5), destination = (5, 1), deadline = 20
+RoutePlanner.route_to(): destination = (5, 1)
+Total reward: 174.5
+Total reward: 174.5
+Total reward: 174.5
+Total reward: 176.5
+Total reward: 178.5
+Total reward: 178.5
+Total reward: 178.5
+Total reward: 178.5
+Total reward: 180.5
+Total reward: 180.5
+Total reward: 180.5
+Total reward: 180.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 192.5
+Simulator.run(): Trial 10
+Environment.reset(): Trial set up with start = (2, 5), destination = (5, 4), deadline = 20
+RoutePlanner.route_to(): destination = (5, 4)
+Total reward: 192.5
+Total reward: 192.5
+Total reward: 192.5
+Total reward: 192.5
+Total reward: 192.5
+Total reward: 194.5
+Total reward: 196.5
+Total reward: 196.5
+Total reward: 196.5
+Total reward: 196.5
+Total reward: 198.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 210.5
+Simulator.run(): Trial 11
+Environment.reset(): Trial set up with start = (6, 5), destination = (3, 6), deadline = 20
+RoutePlanner.route_to(): destination = (3, 6)
+Total reward: 210.5
+Total reward: 210.5
+Total reward: 210.5
+Total reward: 210.5
+Total reward: 212.5
+Total reward: 212.5
+Total reward: 214.5
+Total reward: 214.5
+Total reward: 214.5
+Total reward: 214.5
+Total reward: 216.5
+Total reward: 216.5
+Total reward: 216.5
+Total reward: 216.5
+Total reward: 216.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 228.5
+Simulator.run(): Trial 12
+Environment.reset(): Trial set up with start = (4, 5), destination = (6, 2), deadline = 25
+RoutePlanner.route_to(): destination = (6, 2)
+Total reward: 228.5
+Total reward: 228.5
+Total reward: 228.5
+Total reward: 230.5
+Total reward: 232.5
+Total reward: 234.5
+Total reward: 236.5
+Total reward: 235.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 247.5
+Simulator.run(): Trial 13
+Environment.reset(): Trial set up with start = (4, 1), destination = (6, 6), deadline = 35
+RoutePlanner.route_to(): destination = (6, 6)
+Total reward: 249.5
+Total reward: 251.5
+Total reward: 251.0
+Total reward: 253.0
+Total reward: 255.0
+Total reward: 257.0
+Total reward: 256.5
+Total reward: 258.5
+Total reward: 260.5
+Total reward: 262.5
+Total reward: 262.5
+Total reward: 264.5
+Total reward: 266.5
+Total reward: 265.5
+Total reward: 265.0
+Total reward: 267.0
+Total reward: 269.0
+Total reward: 271.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 283.0
+Simulator.run(): Trial 14
+Environment.reset(): Trial set up with start = (2, 2), destination = (4, 6), deadline = 30
+RoutePlanner.route_to(): destination = (4, 6)
+Total reward: 285.0
+Total reward: 287.0
+Total reward: 289.0
+Total reward: 291.0
+Total reward: 290.0
+Total reward: 289.5
+Total reward: 291.5
+Total reward: 293.5
+Total reward: 295.5
+Total reward: 295.5
+Total reward: 295.5
+Total reward: 295.5
+Total reward: 295.5
+Total reward: 295.0
+Total reward: 297.0
+Total reward: 299.0
+Total reward: 301.0
+Total reward: 301.0
+Total reward: 300.5
+Total reward: 302.5
+Total reward: 304.5
+Total reward: 306.5
+Total reward: 306.5
+Total reward: 306.5
+Total reward: 306.0
+Total reward: 308.0
+Total reward: 310.0
+Total reward: 312.0
+Total reward: 312.0
+Total reward: 312.0
+Total reward: 311.5
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 15
+Environment.reset(): Trial set up with start = (5, 6), destination = (3, 4), deadline = 20
+RoutePlanner.route_to(): destination = (3, 4)
+Total reward: 313.5
+Total reward: 313.0
+Total reward: 315.0
+Total reward: 317.0
+Total reward: 316.5
+Total reward: 318.5
+Total reward: 320.5
+Total reward: 322.5
+Total reward: 322.5
+Total reward: 324.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 336.5
+Simulator.run(): Trial 16
+Environment.reset(): Trial set up with start = (3, 5), destination = (6, 6), deadline = 20
+RoutePlanner.route_to(): destination = (6, 6)
+Total reward: 336.5
+Total reward: 336.5
+Total reward: 338.5
+Total reward: 338.0
+Total reward: 338.0
+Total reward: 338.0
+Total reward: 340.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 352.0
+Simulator.run(): Trial 17
+Environment.reset(): Trial set up with start = (6, 4), destination = (2, 3), deadline = 25
+RoutePlanner.route_to(): destination = (2, 3)
+Total reward: 354.0
+Total reward: 353.5
+Total reward: 355.5
+Total reward: 357.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 369.5
+Simulator.run(): Trial 18
+Environment.reset(): Trial set up with start = (4, 6), destination = (2, 3), deadline = 25
+RoutePlanner.route_to(): destination = (2, 3)
+Total reward: 371.5
+Total reward: 373.5
+Total reward: 375.5
+Total reward: 377.5
+Total reward: 376.5
+Total reward: 375.5
+Total reward: 374.5
+Total reward: 374.0
+Total reward: 376.0
+Total reward: 378.0
+Total reward: 380.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 392.0
+Simulator.run(): Trial 19
+Environment.reset(): Trial set up with start = (1, 4), destination = (2, 1), deadline = 20
+RoutePlanner.route_to(): destination = (2, 1)
+Total reward: 394.0
+Total reward: 393.5
+Total reward: 395.5
+Total reward: 397.5
+Total reward: 396.5
+Total reward: 396.5
+Total reward: 398.5
+Total reward: 398.5
+Total reward: 398.5
+Total reward: 400.5
+Total reward: 399.5
+Total reward: 398.5
+Total reward: 400.5
+Total reward: 400.0
+Total reward: 399.0
+Total reward: 401.0
+Total reward: 401.0
+Total reward: 400.0
+Total reward: 402.0
+Total reward: 402.0
+Total reward: 402.0
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 20
+Environment.reset(): Trial set up with start = (3, 1), destination = (8, 2), deadline = 30
+RoutePlanner.route_to(): destination = (8, 2)
+Total reward: 404.0
+Total reward: 406.0
+Total reward: 406.0
+Total reward: 406.0
+Total reward: 406.0
+Total reward: 408.0
+Total reward: 407.5
+Total reward: 409.5
+Total reward: 409.0
+Total reward: 409.0
+Total reward: 409.0
+Total reward: 409.0
+Total reward: 411.0
+Total reward: 411.0
+Total reward: 411.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 423.0
+Simulator.run(): Trial 21
+Environment.reset(): Trial set up with start = (4, 3), destination = (8, 6), deadline = 35
+RoutePlanner.route_to(): destination = (8, 6)
+Total reward: 425.0
+Total reward: 424.5
+Total reward: 424.5
+Total reward: 424.0
+Total reward: 426.0
+Total reward: 428.0
+Total reward: 428.0
+Total reward: 428.0
+Total reward: 427.5
+Total reward: 429.5
+Total reward: 431.5
+Total reward: 433.5
+Total reward: 435.5
+Total reward: 435.5
+Total reward: 435.5
+Total reward: 435.5
+Total reward: 435.0
+Total reward: 435.0
+Total reward: 435.0
+Total reward: 435.0
+Total reward: 437.0
+Total reward: 439.0
+Total reward: 441.0
+Total reward: 441.0
+Total reward: 441.0
+Total reward: 443.0
+Total reward: 443.0
+Total reward: 445.0
+Total reward: 445.0
+Total reward: 445.0
+Total reward: 445.0
+Total reward: 445.0
+Total reward: 447.0
+Total reward: 447.0
+Total reward: 447.0
+Total reward: 447.0
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 22
+Environment.reset(): Trial set up with start = (7, 4), destination = (6, 1), deadline = 20
+RoutePlanner.route_to(): destination = (6, 1)
+Total reward: 447.0
+Total reward: 447.0
+Total reward: 447.0
+Total reward: 449.0
+Total reward: 451.0
+Total reward: 453.0
+Total reward: 453.0
+Total reward: 453.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 465.0
+Simulator.run(): Trial 23
+Environment.reset(): Trial set up with start = (5, 1), destination = (3, 3), deadline = 20
+RoutePlanner.route_to(): destination = (3, 3)
+Total reward: 467.0
+Total reward: 466.5
+Total reward: 468.5
+Total reward: 468.5
+Total reward: 468.5
+Total reward: 468.5
+Total reward: 468.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 480.5
+Simulator.run(): Trial 24
+Environment.reset(): Trial set up with start = (8, 1), destination = (8, 5), deadline = 20
+RoutePlanner.route_to(): destination = (8, 5)
+Total reward: 480.5
+Total reward: 480.5
+Total reward: 480.5
+Total reward: 479.5
+Total reward: 479.5
+Total reward: 479.5
+Total reward: 479.5
+Total reward: 479.0
+Total reward: 479.0
+Total reward: 481.0
+Total reward: 481.0
+Total reward: 481.0
+Total reward: 483.0
+Total reward: 485.0
+Total reward: 484.5
+Total reward: 486.5
+Total reward: 486.5
+Total reward: 486.5
+Total reward: 486.5
+Total reward: 486.5
+Total reward: 488.5
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 25
+Environment.reset(): Trial set up with start = (2, 3), destination = (5, 1), deadline = 25
+RoutePlanner.route_to(): destination = (5, 1)
+Total reward: 490.5
+Total reward: 490.5
+Total reward: 490.0
+Total reward: 492.0
+Total reward: 492.0
+Total reward: 492.0
+Total reward: 494.0
+Total reward: 496.0
+Total reward: 496.0
+Total reward: 496.0
+Total reward: 496.0
+Total reward: 496.0
+Total reward: 498.0
+Total reward: 498.0
+Total reward: 498.0
+Total reward: 497.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 509.0
+Simulator.run(): Trial 26
+Environment.reset(): Trial set up with start = (7, 1), destination = (7, 5), deadline = 20
+RoutePlanner.route_to(): destination = (7, 5)
+Total reward: 509.0
+Total reward: 509.0
+Total reward: 509.0
+Total reward: 509.0
+Total reward: 509.0
+Total reward: 511.0
+Total reward: 510.5
+Total reward: 510.0
+Total reward: 510.0
+Total reward: 510.0
+Total reward: 512.0
+Total reward: 512.0
+Total reward: 512.0
+Total reward: 512.0
+Total reward: 512.0
+Total reward: 514.0
+Total reward: 513.0
+Total reward: 512.5
+Total reward: 511.5
+Total reward: 510.5
+Total reward: 510.0
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 27
+Environment.reset(): Trial set up with start = (6, 4), destination = (8, 6), deadline = 20
+RoutePlanner.route_to(): destination = (8, 6)
+Total reward: 512.0
+Total reward: 511.5
+Total reward: 513.5
+Total reward: 515.5
+Total reward: 514.5
+Total reward: 513.5
+Total reward: 512.5
+Total reward: 511.5
+Total reward: 511.0
+Total reward: 510.5
+Total reward: 510.0
+Total reward: 510.0
+Total reward: 512.0
+Total reward: 512.0
+Total reward: 511.5
+Total reward: 510.5
+Total reward: 512.5
+Total reward: 514.5
+Total reward: 516.5
+Total reward: 515.5
+Total reward: 515.5
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 28
+Environment.reset(): Trial set up with start = (4, 1), destination = (2, 3), deadline = 20
+RoutePlanner.route_to(): destination = (2, 3)
+Total reward: 517.5
+Total reward: 517.0
+Total reward: 519.0
+Total reward: 521.0
+Total reward: 521.0
+Total reward: 523.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 535.0
+Simulator.run(): Trial 29
+Environment.reset(): Trial set up with start = (8, 5), destination = (1, 2), deadline = 50
+RoutePlanner.route_to(): destination = (1, 2)
+Total reward: 534.0
+Total reward: 533.5
+Total reward: 533.5
+Total reward: 533.0
+Total reward: 535.0
+Total reward: 534.5
+Total reward: 534.5
+Total reward: 536.5
+Total reward: 538.5
+Total reward: 540.5
+Total reward: 540.5
+Total reward: 540.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 552.5
+Simulator.run(): Trial 30
+Environment.reset(): Trial set up with start = (3, 6), destination = (1, 3), deadline = 25
+RoutePlanner.route_to(): destination = (1, 3)
+Total reward: 552.5
+Total reward: 552.5
+Total reward: 552.5
+Total reward: 552.5
+Total reward: 552.5
+Total reward: 554.5
+Total reward: 554.5
+Total reward: 554.5
+Total reward: 554.5
+Total reward: 554.5
+Total reward: 556.5
+Total reward: 558.5
+Total reward: 558.5
+Total reward: 558.5
+Total reward: 558.5
+Total reward: 558.5
+Total reward: 560.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 572.5
+Simulator.run(): Trial 31
+Environment.reset(): Trial set up with start = (2, 1), destination = (4, 6), deadline = 35
+RoutePlanner.route_to(): destination = (4, 6)
+Total reward: 572.5
+Total reward: 572.0
+Total reward: 574.0
+Total reward: 576.0
+Total reward: 576.0
+Total reward: 576.0
+Total reward: 578.0
+Total reward: 578.0
+Total reward: 578.0
+Total reward: 578.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 590.0
+Simulator.run(): Trial 32
+Environment.reset(): Trial set up with start = (6, 4), destination = (2, 1), deadline = 35
+RoutePlanner.route_to(): destination = (2, 1)
+Total reward: 592.0
+Total reward: 594.0
+Total reward: 594.0
+Total reward: 596.0
+Total reward: 596.0
+Total reward: 598.0
+Total reward: 598.0
+Total reward: 598.0
+Total reward: 597.0
+Total reward: 597.0
+Total reward: 597.0
+Total reward: 599.0
+Total reward: 601.0
+Total reward: 601.0
+Total reward: 601.0
+Total reward: 603.0
+Total reward: 605.0
+Total reward: 605.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 617.0
+Simulator.run(): Trial 33
+Environment.reset(): Trial set up with start = (2, 1), destination = (8, 3), deadline = 40
+RoutePlanner.route_to(): destination = (8, 3)
+Total reward: 619.0
+Total reward: 621.0
+Total reward: 623.0
+Total reward: 622.0
+Total reward: 622.0
+Total reward: 624.0
+Total reward: 626.0
+Total reward: 626.0
+Total reward: 626.0
+Total reward: 626.0
+Total reward: 628.0
+Total reward: 630.0
+Total reward: 630.0
+Total reward: 630.0
+Total reward: 630.0
+Total reward: 630.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 642.0
+Simulator.run(): Trial 34
+Environment.reset(): Trial set up with start = (7, 5), destination = (4, 6), deadline = 20
+RoutePlanner.route_to(): destination = (4, 6)
+Total reward: 642.0
+Total reward: 641.5
+Total reward: 641.0
+Total reward: 643.0
+Total reward: 645.0
+Total reward: 645.0
+Total reward: 645.0
+Total reward: 647.0
+Total reward: 649.0
+Total reward: 649.0
+Total reward: 649.0
+Total reward: 649.0
+Total reward: 651.0
+Total reward: 651.0
+Total reward: 651.0
+Total reward: 651.0
+Total reward: 651.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 663.0
+Simulator.run(): Trial 35
+Environment.reset(): Trial set up with start = (6, 1), destination = (4, 3), deadline = 20
+RoutePlanner.route_to(): destination = (4, 3)
+Total reward: 663.0
+Total reward: 663.0
+Total reward: 665.0
+Total reward: 665.0
+Total reward: 665.0
+Total reward: 667.0
+Total reward: 667.0
+Total reward: 667.0
+Total reward: 667.0
+Total reward: 667.0
+Total reward: 669.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 681.0
+Simulator.run(): Trial 36
+Environment.reset(): Trial set up with start = (1, 4), destination = (5, 4), deadline = 20
+RoutePlanner.route_to(): destination = (5, 4)
+Total reward: 683.0
+Total reward: 683.0
+Total reward: 683.0
+Total reward: 683.0
+Total reward: 682.5
+Total reward: 684.5
+Total reward: 684.5
+Total reward: 684.5
+Total reward: 684.5
+Total reward: 686.5
+Total reward: 688.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 700.5
+Simulator.run(): Trial 37
+Environment.reset(): Trial set up with start = (8, 1), destination = (7, 4), deadline = 20
+RoutePlanner.route_to(): destination = (7, 4)
+Total reward: 700.5
+Total reward: 700.5
+Total reward: 700.5
+Total reward: 700.5
+Total reward: 700.5
+Total reward: 702.5
+Total reward: 702.5
+Total reward: 702.5
+Total reward: 702.5
+Total reward: 702.5
+Total reward: 704.5
+Total reward: 704.5
+Total reward: 706.5
+Total reward: 706.5
+Total reward: 706.5
+Total reward: 706.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 718.5
+Simulator.run(): Trial 38
+Environment.reset(): Trial set up with start = (5, 6), destination = (7, 3), deadline = 25
+RoutePlanner.route_to(): destination = (7, 3)
+Total reward: 720.5
+Total reward: 720.5
+Total reward: 720.5
+Total reward: 720.5
+Total reward: 720.5
+Total reward: 720.5
+Total reward: 722.5
+Total reward: 724.5
+Total reward: 726.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 738.5
+Simulator.run(): Trial 39
+Environment.reset(): Trial set up with start = (7, 4), destination = (5, 6), deadline = 20
+RoutePlanner.route_to(): destination = (5, 6)
+Total reward: 740.5
+Total reward: 740.5
+Total reward: 740.5
+Total reward: 740.5
+Total reward: 740.5
+Total reward: 742.5
+Total reward: 744.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 756.5
+Simulator.run(): Trial 40
+Environment.reset(): Trial set up with start = (7, 5), destination = (6, 1), deadline = 25
+RoutePlanner.route_to(): destination = (6, 1)
+Total reward: 758.5
+Total reward: 760.5
+Total reward: 760.5
+Total reward: 760.5
+Total reward: 760.0
+Total reward: 762.0
+Total reward: 764.0
+Total reward: 766.0
+Total reward: 768.0
+Total reward: 770.0
+Total reward: 770.0
+Total reward: 770.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 782.0
+Simulator.run(): Trial 41
+Environment.reset(): Trial set up with start = (6, 2), destination = (4, 4), deadline = 20
+RoutePlanner.route_to(): destination = (4, 4)
+Total reward: 782.0
+Total reward: 782.0
+Total reward: 782.0
+Total reward: 782.0
+Total reward: 782.0
+Total reward: 784.0
+Total reward: 786.0
+Total reward: 788.0
+Total reward: 788.0
+Total reward: 788.0
+Total reward: 788.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 800.0
+Simulator.run(): Trial 42
+Environment.reset(): Trial set up with start = (1, 5), destination = (8, 1), deadline = 55
+RoutePlanner.route_to(): destination = (8, 1)
+Total reward: 800.0
+Total reward: 800.0
+Total reward: 800.0
+Total reward: 800.0
+Total reward: 802.0
+Total reward: 802.0
+Total reward: 802.0
+Total reward: 802.0
+Total reward: 802.0
+Total reward: 802.0
+Total reward: 804.0
+Total reward: 806.0
+Total reward: 806.0
+Total reward: 806.0
+Total reward: 806.0
+Total reward: 808.0
+Total reward: 808.0
+Total reward: 808.0
+Total reward: 810.0
+Total reward: 812.0
+Total reward: 814.0
+Total reward: 816.0
+Total reward: 815.5
+Total reward: 815.0
+Total reward: 817.0
+Total reward: 817.0
+Total reward: 817.0
+Total reward: 817.0
+Total reward: 816.5
+Total reward: 818.5
+Total reward: 818.5
+Total reward: 818.5
+Total reward: 818.5
+Total reward: 818.0
+Total reward: 820.0
+Total reward: 819.5
+Total reward: 821.5
+Total reward: 821.0
+Total reward: 823.0
+Total reward: 823.0
+Total reward: 822.5
+Total reward: 824.5
+Total reward: 824.0
+Total reward: 826.0
+Total reward: 828.0
+Total reward: 828.0
+Total reward: 828.0
+Total reward: 828.0
+Total reward: 827.5
+Total reward: 827.5
+Total reward: 827.5
+Total reward: 827.0
+Total reward: 829.0
+Total reward: 831.0
+Total reward: 831.0
+Total reward: 831.0
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 43
+Environment.reset(): Trial set up with start = (8, 1), destination = (2, 1), deadline = 30
+RoutePlanner.route_to(): destination = (2, 1)
+Total reward: 833.0
+Total reward: 835.0
+Total reward: 835.0
+Total reward: 835.0
+Total reward: 835.0
+Total reward: 835.0
+Total reward: 835.0
+Total reward: 837.0
+Total reward: 839.0
+Total reward: 839.0
+Total reward: 841.0
+Total reward: 841.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 853.0
+Simulator.run(): Trial 44
+Environment.reset(): Trial set up with start = (5, 2), destination = (8, 6), deadline = 35
+RoutePlanner.route_to(): destination = (8, 6)
+Total reward: 855.0
+Total reward: 855.0
+Total reward: 855.0
+Total reward: 855.0
+Total reward: 857.0
+Total reward: 856.0
+Total reward: 858.0
+Total reward: 860.0
+Total reward: 860.0
+Total reward: 860.0
+Total reward: 862.0
+Total reward: 862.0
+Total reward: 862.0
+Total reward: 862.0
+Total reward: 862.0
+Total reward: 864.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 876.0
+Simulator.run(): Trial 45
+Environment.reset(): Trial set up with start = (7, 2), destination = (6, 6), deadline = 25
+RoutePlanner.route_to(): destination = (6, 6)
+Total reward: 878.0
+Total reward: 880.0
+Total reward: 882.0
+Total reward: 882.0
+Total reward: 882.0
+Total reward: 882.0
+Total reward: 884.0
+Total reward: 884.0
+Total reward: 884.0
+Total reward: 884.0
+Total reward: 884.0
+Total reward: 884.0
+Total reward: 884.0
+Total reward: 884.0
+Total reward: 884.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 896.0
+Simulator.run(): Trial 46
+Environment.reset(): Trial set up with start = (1, 6), destination = (6, 3), deadline = 40
+RoutePlanner.route_to(): destination = (6, 3)
+Total reward: 898.0
+Total reward: 900.0
+Total reward: 900.0
+Total reward: 900.0
+Total reward: 900.0
+Total reward: 902.0
+Total reward: 902.0
+Total reward: 902.0
+Total reward: 902.0
+Total reward: 904.0
+Total reward: 906.0
+Total reward: 906.0
+Total reward: 908.0
+Total reward: 908.0
+Total reward: 908.0
+Total reward: 908.0
+Total reward: 910.0
+Total reward: 910.0
+Total reward: 910.0
+Total reward: 910.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 922.0
+Simulator.run(): Trial 47
+Environment.reset(): Trial set up with start = (1, 4), destination = (5, 3), deadline = 25
+RoutePlanner.route_to(): destination = (5, 3)
+Total reward: 924.0
+Total reward: 924.0
+Total reward: 924.0
+Total reward: 926.0
+Total reward: 926.0
+Total reward: 926.0
+Total reward: 928.0
+Total reward: 930.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 942.0
+Simulator.run(): Trial 48
+Environment.reset(): Trial set up with start = (8, 3), destination = (1, 3), deadline = 35
+RoutePlanner.route_to(): destination = (1, 3)
+Total reward: 944.0
+Total reward: 946.0
+Total reward: 945.5
+Total reward: 947.5
+Total reward: 947.5
+Total reward: 947.5
+Total reward: 947.5
+Total reward: 947.5
+Total reward: 949.5
+Total reward: 949.5
+Total reward: 949.5
+Total reward: 949.5
+Total reward: 951.5
+Total reward: 951.5
+Total reward: 951.5
+Total reward: 953.5
+Total reward: 953.5
+Total reward: 953.5
+Total reward: 953.5
+Total reward: 953.5
+Total reward: 955.5
+Total reward: 957.5
+Total reward: 959.5
+Total reward: 958.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 970.5
+Simulator.run(): Trial 49
+Environment.reset(): Trial set up with start = (1, 5), destination = (6, 3), deadline = 35
+RoutePlanner.route_to(): destination = (6, 3)
+Total reward: 970.5
+Total reward: 970.5
+Total reward: 970.5
+Total reward: 970.0
+Total reward: 970.0
+Total reward: 970.0
+Total reward: 972.0
+Total reward: 972.0
+Total reward: 972.0
+Total reward: 971.5
+Total reward: 973.5
+Total reward: 975.5
+Total reward: 975.5
+Total reward: 975.5
+Total reward: 975.5
+Total reward: 977.5
+Total reward: 977.5
+Total reward: 977.5
+Total reward: 979.5
+Total reward: 981.5
+Total reward: 981.5
+Total reward: 981.0
+Total reward: 983.0
+Total reward: 985.0
+Total reward: 987.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 999.0
+Simulator.run(): Trial 50
+Environment.reset(): Trial set up with start = (4, 1), destination = (6, 3), deadline = 20
+RoutePlanner.route_to(): destination = (6, 3)
+Total reward: 999.0
+Total reward: 998.5
+Total reward: 1000.5
+Total reward: 1002.5
+Total reward: 1002.5
+Total reward: 1002.5
+Total reward: 1002.5
+Total reward: 1002.5
+Total reward: 1002.5
+Total reward: 1004.5
+Total reward: 1006.5
+Total reward: 1006.5
+Total reward: 1008.5
+Total reward: 1010.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1022.5
+Simulator.run(): Trial 51
+Environment.reset(): Trial set up with start = (2, 5), destination = (8, 3), deadline = 40
+RoutePlanner.route_to(): destination = (8, 3)
+Total reward: 1022.0
+Total reward: 1024.0
+Total reward: 1026.0
+Total reward: 1028.0
+Total reward: 1028.0
+Total reward: 1028.0
+Total reward: 1030.0
+Total reward: 1032.0
+Total reward: 1031.5
+Total reward: 1033.5
+Total reward: 1033.5
+Total reward: 1033.5
+Total reward: 1035.5
+Total reward: 1035.5
+Total reward: 1035.5
+Total reward: 1035.5
+Total reward: 1037.5
+Total reward: 1037.0
+Total reward: 1039.0
+Total reward: 1041.0
+Total reward: 1041.0
+Total reward: 1041.0
+Total reward: 1041.0
+Total reward: 1041.0
+Total reward: 1041.0
+Total reward: 1043.0
+Total reward: 1043.0
+Total reward: 1043.0
+Total reward: 1043.0
+Total reward: 1043.0
+Total reward: 1045.0
+Total reward: 1047.0
+Total reward: 1047.0
+Total reward: 1047.0
+Total reward: 1047.0
+Total reward: 1047.0
+Total reward: 1049.0
+Total reward: 1049.0
+Total reward: 1049.0
+Total reward: 1049.0
+Total reward: 1051.0
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 52
+Environment.reset(): Trial set up with start = (7, 2), destination = (5, 6), deadline = 30
+RoutePlanner.route_to(): destination = (5, 6)
+Total reward: 1053.0
+Total reward: 1055.0
+Total reward: 1055.0
+Total reward: 1055.0
+Total reward: 1057.0
+Total reward: 1059.0
+Total reward: 1059.0
+Total reward: 1059.0
+Total reward: 1059.0
+Total reward: 1059.0
+Total reward: 1061.0
+Total reward: 1061.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1073.0
+Simulator.run(): Trial 53
+Environment.reset(): Trial set up with start = (8, 6), destination = (3, 3), deadline = 40
+RoutePlanner.route_to(): destination = (3, 3)
+Total reward: 1075.0
+Total reward: 1077.0
+Total reward: 1077.0
+Total reward: 1077.0
+Total reward: 1079.0
+Total reward: 1081.0
+Total reward: 1083.0
+Total reward: 1083.0
+Total reward: 1083.0
+Total reward: 1083.0
+Total reward: 1085.0
+Total reward: 1087.0
+Total reward: 1087.0
+Total reward: 1087.0
+Total reward: 1087.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1099.0
+Simulator.run(): Trial 54
+Environment.reset(): Trial set up with start = (3, 6), destination = (5, 2), deadline = 30
+RoutePlanner.route_to(): destination = (5, 2)
+Total reward: 1101.0
+Total reward: 1103.0
+Total reward: 1103.0
+Total reward: 1103.0
+Total reward: 1103.0
+Total reward: 1105.0
+Total reward: 1107.0
+Total reward: 1109.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1121.0
+Simulator.run(): Trial 55
+Environment.reset(): Trial set up with start = (2, 4), destination = (3, 1), deadline = 20
+RoutePlanner.route_to(): destination = (3, 1)
+Total reward: 1123.0
+Total reward: 1125.0
+Total reward: 1125.0
+Total reward: 1125.0
+Total reward: 1125.0
+Total reward: 1125.0
+Total reward: 1127.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1139.0
+Simulator.run(): Trial 56
+Environment.reset(): Trial set up with start = (2, 4), destination = (1, 1), deadline = 20
+RoutePlanner.route_to(): destination = (1, 1)
+Total reward: 1141.0
+Total reward: 1141.0
+Total reward: 1140.0
+Total reward: 1142.0
+Total reward: 1144.0
+Total reward: 1144.0
+Total reward: 1144.0
+Total reward: 1146.0
+Total reward: 1146.0
+Total reward: 1148.0
+Total reward: 1148.0
+Total reward: 1148.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1160.0
+Simulator.run(): Trial 57
+Environment.reset(): Trial set up with start = (5, 1), destination = (8, 6), deadline = 40
+RoutePlanner.route_to(): destination = (8, 6)
+Total reward: 1162.0
+Total reward: 1164.0
+Total reward: 1164.0
+Total reward: 1164.0
+Total reward: 1164.0
+Total reward: 1166.0
+Total reward: 1168.0
+Total reward: 1170.0
+Total reward: 1172.0
+Total reward: 1172.0
+Total reward: 1174.0
+Total reward: 1174.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1186.0
+Simulator.run(): Trial 58
+Environment.reset(): Trial set up with start = (1, 3), destination = (6, 6), deadline = 40
+RoutePlanner.route_to(): destination = (6, 6)
+Total reward: 1188.0
+Total reward: 1190.0
+Total reward: 1190.0
+Total reward: 1190.0
+Total reward: 1190.0
+Total reward: 1192.0
+Total reward: 1192.0
+Total reward: 1192.0
+Total reward: 1192.0
+Total reward: 1192.0
+Total reward: 1194.0
+Total reward: 1194.0
+Total reward: 1196.0
+Total reward: 1198.0
+Total reward: 1200.0
+Total reward: 1202.0
+Total reward: 1204.0
+Total reward: 1204.0
+Total reward: 1204.0
+Total reward: 1204.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1216.0
+Simulator.run(): Trial 59
+Environment.reset(): Trial set up with start = (1, 5), destination = (4, 1), deadline = 35
+RoutePlanner.route_to(): destination = (4, 1)
+Total reward: 1216.0
+Total reward: 1216.0
+Total reward: 1216.0
+Total reward: 1216.0
+Total reward: 1218.0
+Total reward: 1218.0
+Total reward: 1218.0
+Total reward: 1217.0
+Total reward: 1217.0
+Total reward: 1217.0
+Total reward: 1217.0
+Total reward: 1217.0
+Total reward: 1219.0
+Total reward: 1221.0
+Total reward: 1221.0
+Total reward: 1223.0
+Total reward: 1225.0
+Total reward: 1225.0
+Total reward: 1225.0
+Total reward: 1225.0
+Total reward: 1227.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1239.0
+Simulator.run(): Trial 60
+Environment.reset(): Trial set up with start = (2, 1), destination = (3, 4), deadline = 20
+RoutePlanner.route_to(): destination = (3, 4)
+Total reward: 1239.0
+Total reward: 1239.0
+Total reward: 1239.0
+Total reward: 1241.0
+Total reward: 1243.0
+Total reward: 1245.0
+Total reward: 1245.0
+Total reward: 1245.0
+Total reward: 1245.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1257.0
+Simulator.run(): Trial 61
+Environment.reset(): Trial set up with start = (3, 2), destination = (5, 6), deadline = 30
+RoutePlanner.route_to(): destination = (5, 6)
+Total reward: 1257.0
+Total reward: 1257.0
+Total reward: 1257.0
+Total reward: 1257.0
+Total reward: 1259.0
+Total reward: 1259.0
+Total reward: 1261.0
+Total reward: 1263.0
+Total reward: 1263.0
+Total reward: 1263.0
+Total reward: 1263.0
+Total reward: 1263.0
+Total reward: 1265.0
+Total reward: 1267.0
+Total reward: 1267.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1279.0
+Simulator.run(): Trial 62
+Environment.reset(): Trial set up with start = (5, 4), destination = (3, 2), deadline = 20
+RoutePlanner.route_to(): destination = (3, 2)
+Total reward: 1279.0
+Total reward: 1279.0
+Total reward: 1279.0
+Total reward: 1279.0
+Total reward: 1279.0
+Total reward: 1281.0
+Total reward: 1281.0
+Total reward: 1281.0
+Total reward: 1281.0
+Total reward: 1283.0
+Total reward: 1285.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1297.0
+Simulator.run(): Trial 63
+Environment.reset(): Trial set up with start = (1, 1), destination = (4, 2), deadline = 20
+RoutePlanner.route_to(): destination = (4, 2)
+Total reward: 1299.0
+Total reward: 1298.5
+Total reward: 1300.5
+Total reward: 1302.5
+Total reward: 1302.0
+Total reward: 1301.5
+Total reward: 1303.5
+Total reward: 1303.0
+Total reward: 1302.5
+Total reward: 1302.5
+Total reward: 1302.5
+Total reward: 1302.5
+Total reward: 1304.5
+Total reward: 1304.5
+Total reward: 1304.5
+Total reward: 1306.5
+Total reward: 1306.5
+Total reward: 1306.0
+Total reward: 1305.5
+Total reward: 1307.5
+Total reward: 1307.5
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 64
+Environment.reset(): Trial set up with start = (2, 3), destination = (8, 6), deadline = 45
+RoutePlanner.route_to(): destination = (8, 6)
+Total reward: 1309.5
+Total reward: 1309.0
+Total reward: 1311.0
+Total reward: 1313.0
+Total reward: 1312.0
+Total reward: 1312.0
+Total reward: 1314.0
+Total reward: 1314.0
+Total reward: 1316.0
+Total reward: 1318.0
+Total reward: 1320.0
+Total reward: 1322.0
+Total reward: 1322.0
+Total reward: 1322.0
+Total reward: 1322.0
+Total reward: 1324.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1333.5
+Simulator.run(): Trial 65
+Environment.reset(): Trial set up with start = (4, 6), destination = (1, 4), deadline = 25
+RoutePlanner.route_to(): destination = (1, 4)
+Total reward: 1335.5
+Total reward: 1335.5
+Total reward: 1335.5
+Total reward: 1335.5
+Total reward: 1335.5
+Total reward: 1337.5
+Total reward: 1337.5
+Total reward: 1337.5
+Total reward: 1337.5
+Total reward: 1337.5
+Total reward: 1339.5
+Total reward: 1339.0
+Total reward: 1339.0
+Total reward: 1339.0
+Total reward: 1339.0
+Total reward: 1339.0
+Total reward: 1338.5
+Total reward: 1340.5
+Total reward: 1340.5
+Total reward: 1340.5
+Total reward: 1342.5
+Total reward: 1342.5
+Total reward: 1342.5
+Total reward: 1342.5
+Total reward: 1342.5
+Total reward: 1344.5
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 66
+Environment.reset(): Trial set up with start = (2, 1), destination = (5, 4), deadline = 30
+RoutePlanner.route_to(): destination = (5, 4)
+Total reward: 1343.5
+Total reward: 1342.5
+Total reward: 1342.5
+Total reward: 1344.5
+Total reward: 1344.5
+Total reward: 1344.5
+Total reward: 1344.5
+Total reward: 1344.5
+Total reward: 1346.5
+Total reward: 1348.5
+Total reward: 1350.5
+Total reward: 1352.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1364.5
+Simulator.run(): Trial 67
+Environment.reset(): Trial set up with start = (5, 1), destination = (1, 6), deadline = 45
+RoutePlanner.route_to(): destination = (1, 6)
+Total reward: 1364.5
+Total reward: 1364.5
+Total reward: 1364.0
+Total reward: 1366.0
+Total reward: 1365.0
+Total reward: 1364.5
+Total reward: 1363.5
+Total reward: 1362.5
+Total reward: 1362.0
+Total reward: 1364.0
+Total reward: 1366.0
+Total reward: 1368.0
+Total reward: 1367.5
+Total reward: 1367.0
+Total reward: 1369.0
+Total reward: 1371.0
+Total reward: 1371.0
+Total reward: 1371.0
+Total reward: 1370.5
+Total reward: 1372.5
+Total reward: 1372.5
+Total reward: 1372.0
+Total reward: 1374.0
+Total reward: 1373.5
+Total reward: 1375.5
+Total reward: 1377.5
+Total reward: 1379.5
+Total reward: 1378.5
+Total reward: 1377.5
+Total reward: 1377.0
+Total reward: 1379.0
+Total reward: 1381.0
+Total reward: 1383.0
+Total reward: 1382.0
+Total reward: 1381.0
+Total reward: 1380.5
+Total reward: 1382.5
+Total reward: 1384.5
+Total reward: 1386.5
+Total reward: 1385.5
+Total reward: 1384.5
+Total reward: 1384.0
+Total reward: 1386.0
+Total reward: 1388.0
+Total reward: 1390.0
+Total reward: 1389.0
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 68
+Environment.reset(): Trial set up with start = (5, 1), destination = (2, 5), deadline = 35
+RoutePlanner.route_to(): destination = (2, 5)
+Total reward: 1391.0
+Total reward: 1393.0
+Total reward: 1395.0
+Total reward: 1394.0
+Total reward: 1393.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1405.5
+Simulator.run(): Trial 69
+Environment.reset(): Trial set up with start = (1, 4), destination = (6, 6), deadline = 35
+RoutePlanner.route_to(): destination = (6, 6)
+Total reward: 1405.0
+Total reward: 1404.0
+Total reward: 1404.0
+Total reward: 1404.0
+Total reward: 1404.0
+Total reward: 1404.0
+Total reward: 1403.5
+Total reward: 1403.0
+Total reward: 1403.0
+Total reward: 1405.0
+Total reward: 1407.0
+Total reward: 1409.0
+Total reward: 1409.0
+Total reward: 1409.0
+Total reward: 1409.0
+Total reward: 1411.0
+Total reward: 1413.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1425.0
+Simulator.run(): Trial 70
+Environment.reset(): Trial set up with start = (3, 2), destination = (8, 3), deadline = 30
+RoutePlanner.route_to(): destination = (8, 3)
+Total reward: 1427.0
+Total reward: 1429.0
+Total reward: 1431.0
+Total reward: 1431.0
+Total reward: 1431.0
+Total reward: 1433.0
+Total reward: 1435.0
+Total reward: 1435.0
+Total reward: 1435.0
+Total reward: 1434.0
+Total reward: 1436.0
+Total reward: 1438.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1450.0
+Simulator.run(): Trial 71
+Environment.reset(): Trial set up with start = (7, 6), destination = (1, 4), deadline = 40
+RoutePlanner.route_to(): destination = (1, 4)
+Total reward: 1452.0
+Total reward: 1454.0
+Total reward: 1454.0
+Total reward: 1453.5
+Total reward: 1455.5
+Total reward: 1454.5
+Total reward: 1453.5
+Total reward: 1452.5
+Total reward: 1452.5
+Total reward: 1452.5
+Total reward: 1454.5
+Total reward: 1456.5
+Total reward: 1456.5
+Total reward: 1456.5
+Total reward: 1456.5
+Total reward: 1458.5
+Total reward: 1458.5
+Total reward: 1458.5
+Total reward: 1458.5
+Total reward: 1458.5
+Total reward: 1460.5
+Total reward: 1462.5
+Total reward: 1462.5
+Total reward: 1462.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1474.5
+Simulator.run(): Trial 72
+Environment.reset(): Trial set up with start = (2, 1), destination = (1, 5), deadline = 25
+RoutePlanner.route_to(): destination = (1, 5)
+Total reward: 1476.5
+Total reward: 1476.0
+Total reward: 1476.0
+Total reward: 1476.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1488.0
+Simulator.run(): Trial 73
+Environment.reset(): Trial set up with start = (1, 6), destination = (6, 3), deadline = 40
+RoutePlanner.route_to(): destination = (6, 3)
+Total reward: 1490.0
+Total reward: 1492.0
+Total reward: 1492.0
+Total reward: 1491.5
+Total reward: 1491.0
+Total reward: 1493.0
+Total reward: 1495.0
+Total reward: 1497.0
+Total reward: 1499.0
+Total reward: 1499.0
+Total reward: 1501.0
+Total reward: 1503.0
+Total reward: 1503.0
+Total reward: 1503.0
+Total reward: 1503.0
+Total reward: 1503.0
+Total reward: 1505.0
+Total reward: 1505.0
+Total reward: 1505.0
+Total reward: 1505.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1517.0
+Simulator.run(): Trial 74
+Environment.reset(): Trial set up with start = (6, 2), destination = (4, 4), deadline = 20
+RoutePlanner.route_to(): destination = (4, 4)
+Total reward: 1519.0
+Total reward: 1519.0
+Total reward: 1519.0
+Total reward: 1519.0
+Total reward: 1519.0
+Total reward: 1521.0
+Total reward: 1523.0
+Total reward: 1523.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1535.0
+Simulator.run(): Trial 75
+Environment.reset(): Trial set up with start = (2, 3), destination = (6, 2), deadline = 25
+RoutePlanner.route_to(): destination = (6, 2)
+Total reward: 1537.0
+Total reward: 1539.0
+Total reward: 1539.0
+Total reward: 1539.0
+Total reward: 1538.5
+Total reward: 1537.5
+Total reward: 1539.5
+Total reward: 1539.5
+Total reward: 1539.5
+Total reward: 1539.5
+Total reward: 1541.5
+Total reward: 1541.5
+Total reward: 1541.0
+Total reward: 1543.0
+Total reward: 1545.0
+Total reward: 1547.0
+Total reward: 1546.0
+Total reward: 1545.5
+Total reward: 1547.5
+Total reward: 1549.5
+Total reward: 1551.5
+Total reward: 1553.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1565.5
+Simulator.run(): Trial 76
+Environment.reset(): Trial set up with start = (6, 6), destination = (1, 5), deadline = 30
+RoutePlanner.route_to(): destination = (1, 5)
+Total reward: 1565.5
+Total reward: 1567.5
+Total reward: 1569.5
+Total reward: 1569.5
+Total reward: 1571.5
+Total reward: 1573.5
+Total reward: 1575.5
+Total reward: 1577.5
+Total reward: 1577.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1589.0
+Simulator.run(): Trial 77
+Environment.reset(): Trial set up with start = (5, 5), destination = (2, 1), deadline = 35
+RoutePlanner.route_to(): destination = (2, 1)
+Total reward: 1591.0
+Total reward: 1591.0
+Total reward: 1593.0
+Total reward: 1593.0
+Total reward: 1593.0
+Total reward: 1595.0
+Total reward: 1597.0
+Total reward: 1597.0
+Total reward: 1597.0
+Total reward: 1599.0
+Total reward: 1601.0
+Total reward: 1601.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1613.0
+Simulator.run(): Trial 78
+Environment.reset(): Trial set up with start = (1, 2), destination = (4, 5), deadline = 30
+RoutePlanner.route_to(): destination = (4, 5)
+Total reward: 1615.0
+Total reward: 1617.0
+Total reward: 1617.0
+Total reward: 1619.0
+Total reward: 1619.0
+Total reward: 1619.0
+Total reward: 1619.0
+Total reward: 1619.0
+Total reward: 1621.0
+Total reward: 1623.0
+Total reward: 1625.0
+Total reward: 1625.0
+Total reward: 1625.0
+Total reward: 1625.0
+Total reward: 1625.0
+Total reward: 1627.0
+Total reward: 1627.0
+Total reward: 1627.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1639.0
+Simulator.run(): Trial 79
+Environment.reset(): Trial set up with start = (8, 4), destination = (1, 1), deadline = 50
+RoutePlanner.route_to(): destination = (1, 1)
+Total reward: 1641.0
+Total reward: 1641.0
+Total reward: 1641.0
+Total reward: 1643.0
+Total reward: 1645.0
+Total reward: 1645.0
+Total reward: 1645.0
+Total reward: 1645.0
+Total reward: 1645.0
+Total reward: 1645.0
+Total reward: 1647.0
+Total reward: 1649.0
+Total reward: 1649.0
+Total reward: 1649.0
+Total reward: 1649.0
+Total reward: 1651.0
+Total reward: 1651.0
+Total reward: 1651.0
+Total reward: 1653.0
+Total reward: 1655.0
+Total reward: 1657.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1669.0
+Simulator.run(): Trial 80
+Environment.reset(): Trial set up with start = (1, 1), destination = (2, 6), deadline = 30
+RoutePlanner.route_to(): destination = (2, 6)
+Total reward: 1671.0
+Total reward: 1670.5
+Total reward: 1670.5
+Total reward: 1670.5
+Total reward: 1672.5
+Total reward: 1672.5
+Total reward: 1672.5
+Total reward: 1672.5
+Total reward: 1674.5
+Total reward: 1674.5
+Total reward: 1674.5
+Total reward: 1674.5
+Total reward: 1676.5
+Total reward: 1676.5
+Total reward: 1676.5
+Total reward: 1678.5
+Total reward: 1680.5
+Total reward: 1680.5
+Total reward: 1680.5
+Total reward: 1680.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1692.5
+Simulator.run(): Trial 81
+Environment.reset(): Trial set up with start = (1, 4), destination = (8, 6), deadline = 45
+RoutePlanner.route_to(): destination = (8, 6)
+Total reward: 1692.5
+Total reward: 1692.5
+Total reward: 1692.5
+Total reward: 1692.5
+Total reward: 1694.5
+Total reward: 1694.5
+Total reward: 1694.5
+Total reward: 1694.5
+Total reward: 1694.5
+Total reward: 1696.5
+Total reward: 1696.5
+Total reward: 1696.5
+Total reward: 1698.5
+Total reward: 1700.5
+Total reward: 1700.0
+Total reward: 1702.0
+Total reward: 1704.0
+Total reward: 1704.0
+Total reward: 1704.0
+Total reward: 1704.0
+Total reward: 1706.0
+Total reward: 1705.5
+Total reward: 1707.5
+Total reward: 1709.5
+Total reward: 1711.5
+Total reward: 1713.5
+Total reward: 1713.0
+Total reward: 1712.5
+Total reward: 1711.5
+Total reward: 1713.5
+Total reward: 1713.0
+Total reward: 1715.0
+Total reward: 1714.5
+Total reward: 1716.5
+Total reward: 1716.0
+Total reward: 1718.0
+Total reward: 1720.0
+Total reward: 1720.0
+Total reward: 1720.0
+Total reward: 1722.0
+Total reward: 1722.0
+Total reward: 1722.0
+Total reward: 1724.0
+Total reward: 1724.0
+Total reward: 1724.0
+Total reward: 1724.0
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 82
+Environment.reset(): Trial set up with start = (4, 1), destination = (1, 3), deadline = 25
+RoutePlanner.route_to(): destination = (1, 3)
+Total reward: 1726.0
+Total reward: 1728.0
+Total reward: 1728.0
+Total reward: 1728.0
+Total reward: 1728.0
+Total reward: 1728.0
+Total reward: 1730.0
+Total reward: 1730.0
+Total reward: 1730.0
+Total reward: 1730.0
+Total reward: 1732.0
+Total reward: 1731.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1743.0
+Simulator.run(): Trial 83
+Environment.reset(): Trial set up with start = (4, 5), destination = (8, 5), deadline = 20
+RoutePlanner.route_to(): destination = (8, 5)
+Total reward: 1742.0
+Total reward: 1741.5
+Total reward: 1743.5
+Total reward: 1745.5
+Total reward: 1745.5
+Total reward: 1745.5
+Total reward: 1745.5
+Total reward: 1745.5
+Total reward: 1745.5
+Total reward: 1747.5
+Total reward: 1747.5
+Total reward: 1747.5
+Total reward: 1747.0
+Total reward: 1746.5
+Total reward: 1746.0
+Total reward: 1748.0
+Total reward: 1750.0
+Total reward: 1752.0
+Total reward: 1754.0
+Total reward: 1754.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1766.0
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 84
+Environment.reset(): Trial set up with start = (6, 5), destination = (3, 3), deadline = 25
+RoutePlanner.route_to(): destination = (3, 3)
+Total reward: 1765.5
+Total reward: 1765.0
+Total reward: 1767.0
+Total reward: 1767.0
+Total reward: 1769.0
+Total reward: 1769.0
+Total reward: 1768.0
+Total reward: 1768.0
+Total reward: 1768.0
+Total reward: 1767.5
+Total reward: 1766.5
+Total reward: 1765.5
+Total reward: 1765.0
+Total reward: 1764.0
+Total reward: 1763.5
+Total reward: 1765.5
+Total reward: 1767.5
+Total reward: 1769.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1781.5
+Simulator.run(): Trial 85
+Environment.reset(): Trial set up with start = (8, 3), destination = (3, 2), deadline = 30
+RoutePlanner.route_to(): destination = (3, 2)
+Total reward: 1783.5
+Total reward: 1785.5
+Total reward: 1785.5
+Total reward: 1785.5
+Total reward: 1787.5
+Total reward: 1789.5
+Total reward: 1791.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1803.5
+Simulator.run(): Trial 86
+Environment.reset(): Trial set up with start = (8, 5), destination = (5, 4), deadline = 20
+RoutePlanner.route_to(): destination = (5, 4)
+Total reward: 1803.5
+Total reward: 1803.5
+Total reward: 1803.5
+Total reward: 1803.5
+Total reward: 1805.5
+Total reward: 1807.5
+Total reward: 1807.5
+Total reward: 1807.5
+Total reward: 1809.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1821.5
+Simulator.run(): Trial 87
+Environment.reset(): Trial set up with start = (1, 4), destination = (5, 3), deadline = 25
+RoutePlanner.route_to(): destination = (5, 3)
+Total reward: 1823.5
+Total reward: 1825.5
+Total reward: 1825.5
+Total reward: 1827.5
+Total reward: 1829.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 1841.5
+Simulator.run(): Trial 88
+Environment.reset(): Trial set up with start = (2, 2), destination = (8, 6), deadline = 50
+RoutePlanner.route_to(): destination = (8, 6)
+Total reward: 1841.0
+Total reward: 1843.0
+Total reward: 1845.0
+Total reward: 1845.0
+Total reward: 1845.0
+Total reward: 1847.0
+Total reward: 1849.0
+Total reward: 1848.5
+Total reward: 1848.0
+Total reward: 1850.0
+Total reward: 1852.0
+Total reward: 1854.0
+Total reward: 1854.0
+Total reward: 1854.0
+Total reward: 1854.0
+Total reward: 1856.0
+Total reward: 1858.0
+Total reward: 1858.0
+Total reward: 1858.0
+Total reward: 1858.0
+Total reward: 1860.0
+Total reward: 1862.0
+Total reward: 1864.0
+Total reward: 1866.0
+Total reward: 1866.0
+Total reward: 1868.0
+Total reward: 1868.0
+Total reward: 1868.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1880.0
+Simulator.run(): Trial 89
+Environment.reset(): Trial set up with start = (8, 4), destination = (2, 1), deadline = 45
+RoutePlanner.route_to(): destination = (2, 1)
+Total reward: 1882.0
+Total reward: 1882.0
+Total reward: 1882.0
+Total reward: 1882.0
+Total reward: 1882.0
+Total reward: 1881.0
+Total reward: 1883.0
+Total reward: 1883.0
+Total reward: 1883.0
+Total reward: 1883.0
+Total reward: 1885.0
+Total reward: 1887.0
+Total reward: 1889.0
+Total reward: 1891.0
+Total reward: 1893.0
+Total reward: 1893.0
+Total reward: 1893.0
+Total reward: 1893.0
+Total reward: 1895.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1907.0
+Simulator.run(): Trial 90
+Environment.reset(): Trial set up with start = (8, 4), destination = (4, 5), deadline = 25
+RoutePlanner.route_to(): destination = (4, 5)
+Total reward: 1907.0
+Total reward: 1907.0
+Total reward: 1909.0
+Total reward: 1909.0
+Total reward: 1909.0
+Total reward: 1909.0
+Total reward: 1911.0
+Total reward: 1913.0
+Total reward: 1915.0
+Total reward: 1914.5
+Total reward: 1916.5
+Total reward: 1918.5
+Total reward: 1920.5
+Total reward: 1920.0
+Total reward: 1922.0
+Total reward: 1924.0
+Total reward: 1926.0
+Total reward: 1925.5
+Total reward: 1927.5
+Total reward: 1929.5
+Total reward: 1931.5
+Total reward: 1931.0
+Total reward: 1933.0
+Total reward: 1935.0
+Total reward: 1937.0
+Total reward: 1936.5
+Environment.step(): Primary agent ran out of time! Trial aborted.
+Simulator.run(): Trial 91
+Environment.reset(): Trial set up with start = (7, 4), destination = (3, 6), deadline = 30
+RoutePlanner.route_to(): destination = (3, 6)
+Total reward: 1938.5
+Total reward: 1940.5
+Total reward: 1942.5
+Total reward: 1942.5
+Total reward: 1942.5
+Total reward: 1942.5
+Total reward: 1944.5
+Total reward: 1944.0
+Total reward: 1946.0
+Total reward: 1948.0
+Total reward: 1950.0
+Total reward: 1952.0
+Total reward: 1952.0
+Total reward: 1952.0
+Total reward: 1952.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1964.0
+Simulator.run(): Trial 92
+Environment.reset(): Trial set up with start = (3, 4), destination = (1, 2), deadline = 20
+RoutePlanner.route_to(): destination = (1, 2)
+Total reward: 1966.0
+Total reward: 1968.0
+Total reward: 1970.0
+Total reward: 1970.0
+Total reward: 1970.0
+Total reward: 1970.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 1982.0
+Simulator.run(): Trial 93
+Environment.reset(): Trial set up with start = (7, 2), destination = (4, 4), deadline = 25
+RoutePlanner.route_to(): destination = (4, 4)
+Total reward: 1984.0
+Total reward: 1986.0
+Total reward: 1988.0
+Total reward: 1990.0
+Total reward: 1989.5
+Total reward: 1991.5
+Total reward: 1993.5
+Total reward: 1995.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 2007.5
+Simulator.run(): Trial 94
+Environment.reset(): Trial set up with start = (8, 2), destination = (1, 3), deadline = 40
+RoutePlanner.route_to(): destination = (1, 3)
+Total reward: 2009.5
+Total reward: 2011.5
+Total reward: 2011.5
+Total reward: 2011.5
+Total reward: 2013.5
+Total reward: 2013.5
+Total reward: 2013.5
+Total reward: 2013.5
+Total reward: 2015.5
+Total reward: 2017.5
+Total reward: 2019.5
+Total reward: 2019.5
+Total reward: 2021.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 2033.5
+Simulator.run(): Trial 95
+Environment.reset(): Trial set up with start = (5, 2), destination = (3, 6), deadline = 30
+RoutePlanner.route_to(): destination = (3, 6)
+Total reward: 2035.5
+Total reward: 2035.5
+Total reward: 2035.5
+Total reward: 2037.5
+Total reward: 2037.0
+Total reward: 2039.0
+Total reward: 2041.0
+Total reward: 2043.0
+Total reward: 2045.0
+Total reward: 2047.0
+Total reward: 2047.0
+Total reward: 2047.0
+Total reward: 2049.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 2061.0
+Simulator.run(): Trial 96
+Environment.reset(): Trial set up with start = (6, 1), destination = (5, 6), deadline = 30
+RoutePlanner.route_to(): destination = (5, 6)
+Total reward: 2063.0
+Total reward: 2065.0
+Total reward: 2064.5
+Total reward: 2066.5
+Total reward: 2068.5
+Total reward: 2070.5
+Total reward: 2072.5
+Total reward: 2074.5
+Total reward: 2074.5
+Total reward: 2074.5
+Total reward: 2076.5
+Total reward: 2076.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 2088.5
+Simulator.run(): Trial 97
+Environment.reset(): Trial set up with start = (2, 2), destination = (3, 6), deadline = 25
+RoutePlanner.route_to(): destination = (3, 6)
+Total reward: 2088.5
+Total reward: 2090.5
+Total reward: 2092.5
+Total reward: 2094.5
+Total reward: 2094.5
+Total reward: 2094.5
+Total reward: 2096.5
+Total reward: 2096.5
+Total reward: 2096.0
+Total reward: 2095.5
+Total reward: 2094.5
+Total reward: 2093.5
+Total reward: 2093.0
+Total reward: 2095.0
+Total reward: 2097.0
+Total reward: 2099.0
+Environment.act(): Primary agent has reached destination!
+Total reward: 2111.0
+Simulator.run(): Trial 98
+Environment.reset(): Trial set up with start = (6, 6), destination = (1, 2), deadline = 45
+RoutePlanner.route_to(): destination = (1, 2)
+Total reward: 2113.0
+Total reward: 2115.0
+Total reward: 2117.0
+Total reward: 2116.0
+Total reward: 2116.0
+Total reward: 2118.0
+Total reward: 2117.5
+Total reward: 2119.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 2131.5
+Simulator.run(): Trial 99
+Environment.reset(): Trial set up with start = (3, 1), destination = (4, 5), deadline = 25
+RoutePlanner.route_to(): destination = (4, 5)
+Total reward: 2133.5
+Total reward: 2135.5
+Total reward: 2134.5
+Environment.act(): Primary agent has reached destination!
+Total reward: 2146.5
