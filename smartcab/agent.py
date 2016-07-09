@@ -14,17 +14,21 @@ class LearningAgent(Agent):
         self.q_table = self.initialize_q_table()
         #print self.q_table
         self.totalReward = 0.0 # totals the rewards for every step
+        self.trial_reward = 0.0
         self.totalTime = 0
+        self.first_deadline = self.env.get_deadline(self)
 
 
     def reset(self, destination=None):
         self.planner.route_to(destination)
+        self.first_deadline = self.env.get_deadline(self)
+        self.trial_reward = 0.0
         # Prepare for a new trip; reset any variables here, if required
 
 
     def update(self, t):
         #print self.q_table
-        self.totalTime += t
+        self.totalTime += 1
 
         # Gather inputs
         self.next_waypoint = self.planner.next_waypoint()  # from route planner, also displayed by simulator
@@ -36,20 +40,23 @@ class LearningAgent(Agent):
         self.state = "Go: {}, lights: {}, oncoming: {}, left: {}".format(self.next_waypoint, inputs['light'], inputs['oncoming'], inputs['left'])
 
         # Select action according to your policy
-        da = self.driving_agent(state, deadline)
+        da = self.driving_agent(state, t, deadline)
         action = da[0]
+        #action = random.choice(self.env.valid_actions)
 
         # Execute action and get reward
         reward = self.env.act(self, action)
         self.totalReward += reward
+        self.trial_reward += reward
 
         # Learn policy based on state, action, reward
         self.learning_policy(self.totalTime, reward, state, action, da[1])
 
         #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}, total reward = {}".format(deadline, inputs, action, reward, self.totalReward)  # [debug]
         #print "Total reward: {}".format(self.totalReward)
+        #print "Trial Reward: {}".format(self.trial_reward)
 
-    def driving_agent(self, state, deadline):
+    def driving_agent(self, state, t, deadline):
         """Find the best next action"""
 
         #action = random.choice(self.env.valid_actions)
@@ -57,13 +64,17 @@ class LearningAgent(Agent):
         # Take q values for the actual state plus every possible action
         decision_table = self.get_decision_table(state)
         # Exploration rate
-        exploration_rate = (log(deadline + 0.0001)) * 0.0155
+        exploration_rate = 0
+        #exploration_rate = 0.3 * (float(deadline) / self.first_deadline)
+        #exploration_rate = (log(deadline + 0.0001) ) * 0.015
+        #print exploration_rate
         if exploration_rate < random.random():
             # take action and corresponding q-value with the maximum q-value from the decision table
             q_value_now, action = max((value, key) for key, value in decision_table.iteritems())
         else:
             # chooses a random action and then corresponding q_value from the decision table
             action = random.choice(self.env.valid_actions)
+            #action = state[0]
             q_value_now = decision_table[(action)]
 
         return (action, q_value_now)
@@ -89,8 +100,10 @@ class LearningAgent(Agent):
         return dict(zip(q_keys, q_initialization_values))
 
     def learning_policy(self, t, reward, state, action, q_value_present):
+        #learning_rate = 1.0
         learning_rate = (1.0 / (t + 5)) + 0.75
-        discount_factor = 0.4
+        #discount_factor = 0.4
+        discount_factor = 0.1
         new_state = self.get_the_state(self.env.sense(self))
         new_decision_table = self.get_decision_table(new_state)
         max_future_reward, action = max((value, key) for key, value in new_decision_table.iteritems())
