@@ -2,6 +2,7 @@ import random
 from environment import Agent, Environment
 from planner import RoutePlanner
 from simulator import Simulator
+from math import log
 
 class LearningAgent(Agent):
     """An agent that learns to drive in the smartcab world."""
@@ -10,46 +11,100 @@ class LearningAgent(Agent):
         super(LearningAgent, self).__init__(env)  # sets self.env = env, state = None, next_waypoint = None, and a default color
         self.color = 'red'  # override color
         self.planner = RoutePlanner(self.env, self)  # simple route planner to get next_waypoint
+        self.q_table = self.initialize_q_table()
+        #print self.q_table
         self.totalReward = 0.0 # totals the rewards for every step
-        self.possible_actions = ['forward', 'left', 'right', None]
+        self.totalTime = 0
 
 
     def reset(self, destination=None):
         self.planner.route_to(destination)
-        # TODO: Prepare for a new trip; reset any variables here, if required
+        # Prepare for a new trip; reset any variables here, if required
+
 
     def update(self, t):
+        #print self.q_table
+        self.totalTime += t
+
         # Gather inputs
         self.next_waypoint = self.planner.next_waypoint()  # from route planner, also displayed by simulator
         inputs = self.env.sense(self)
         deadline = self.env.get_deadline(self)
 
         # Update state
-        state = self.update_state(inputs)
+        state = self.get_the_state(inputs)
+        self.state = "Go: {}, lights: {}, oncoming: {}, left: {}".format(self.next_waypoint, inputs['light'], inputs['oncoming'], inputs['left'])
 
         # Select action according to your policy
-        action = self.driving_agent()
+        da = self.driving_agent(state, deadline)
+        action = da[0]
 
         # Execute action and get reward
         reward = self.env.act(self, action)
         self.totalReward += reward
 
-        # TODO: Learn policy based on state, action, reward
+        # Learn policy based on state, action, reward
+        self.learning_policy(self.totalTime, reward, state, action, da[1])
 
         #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}, total reward = {}".format(deadline, inputs, action, reward, self.totalReward)  # [debug]
-        print "Total reward: {}".format(self.totalReward)
+        #print "Total reward: {}".format(self.totalReward)
 
-    def update_state(self, inputs):
-        """Updates the state label visable and returns the state"""
-
-        state = [self.next_waypoint, inputs['light'], inputs['oncoming'], inputs['left']]
-        self.state = "Go: {}, lights: {}, oncoming: {}, left: {}".format(state[0], state[1], state[2], state[3])
-
-    def driving_agent(self):
+    def driving_agent(self, state, deadline):
         """Find the best next action"""
 
-        best_choice = random.choice(self.possible_actions)
-        return best_choice
+        #action = random.choice(self.env.valid_actions)
+
+        # Take q values for the actual state plus every possible action
+        decision_table = self.get_decision_table(state)
+        # Exploration rate
+        exploration_rate = (log(deadline + 0.0001)) * 0.0155
+        if exploration_rate < random.random():
+            # take action and corresponding q-value with the maximum q-value from the decision table
+            q_value_now, action = max((value, key) for key, value in decision_table.iteritems())
+        else:
+            # chooses a random action and then corresponding q_value from the decision table
+            action = random.choice(self.env.valid_actions)
+            q_value_now = decision_table[(action)]
+
+        return (action, q_value_now)
+
+    def initialize_q_table(self):
+        """Initializes Q table with random values"""
+        planned_states = ['forward', 'left', 'right']
+        light_states = ['green', 'red']
+        possible_actions = self.env.valid_actions
+
+        q_keys = []
+        for action in possible_actions:
+            for left in possible_actions:
+                for oncoming in possible_actions:
+                    for light in light_states:
+                        for planned_state in planned_states:
+                            q_keys.append((planned_state, light, oncoming, left, action))
+
+        q_initialization_values = []
+        for _ in range(0, len(q_keys)):
+            q_initialization_values.append(random.random() * 4)
+
+        return dict(zip(q_keys, q_initialization_values))
+
+    def learning_policy(self, t, reward, state, action, q_value_present):
+        learning_rate = (1.0 / (t + 5)) + 0.75
+        discount_factor = 0.4
+        new_state = self.get_the_state(self.env.sense(self))
+        new_decision_table = self.get_decision_table(new_state)
+        max_future_reward, action = max((value, key) for key, value in new_decision_table.iteritems())
+
+        new_q_value = reward + discount_factor * max_future_reward
+
+        # set q value in q table
+        self.q_table[(state + (action,))] = q_value_present + learning_rate * (new_q_value - q_value_present)
+
+    def get_the_state(self, inputs):
+        return (self.next_waypoint, inputs['light'], inputs['oncoming'], inputs['left'])
+
+    def get_decision_table(self, state):
+        return {None: self.q_table[(state + (None,))], 'right': self.q_table[(state + ('right',))], 'left': self.q_table[(state + ('left',))], 'forward': self.q_table[(state + ('forward',))]}
 
 
 def run():
@@ -62,7 +117,7 @@ def run():
     # NOTE: You can set enforce_deadline=False while debugging to allow longer trials
 
     # Now simulate it
-    sim = Simulator(e, update_delay=0.2, display=True)  # create simulator (uses pygame when display=True, if available)
+    sim = Simulator(e, update_delay=0, display=False)  # create simulator (uses pygame when display=True, if available)
     # NOTE: To speed up simulation, reduce update_delay and/or set display=False
 
     sim.run(n_trials=100)  # run for a specified number of trials
