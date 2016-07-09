@@ -15,6 +15,7 @@ class LearningAgent(Agent):
         self.qtable = self.qtable = [[0] * (len(self.actions))] * (len(self.valid_states))
         self.learning_rate = 1.0
         self.discount_factor = 0.01
+        self.totalReward = 0.0
 
     def reset(self, destination=None):
         self.planner.route_to(destination)
@@ -34,16 +35,18 @@ class LearningAgent(Agent):
 
         # Execute action and get reward
         reward = self.env.act(self, action)
+        self.totalReward += reward
 
         # Learn policy based on state, action, reward
         self.learn_policy(self.state, action, reward)
 
         #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}".format(deadline, inputs, action, reward)  # [debug]
+        print "Total Reward: {}".format(self.totalReward)
 
     def driving_agent(self):
         best_choice = random.choice(self.actions)
         index_state = self.get_state_index(self.state)
-        best_choice_index = self.qtable[index_state].index(min(self.qtable[index_state]))
+        best_choice_index = self.qtable[index_state].index(max(self.qtable[index_state]))
         if self.qtable[index_state][best_choice_index] != 0:
             best_choice = self.actions[best_choice_index]
         # try to not get stuck that much
