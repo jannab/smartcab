@@ -74,20 +74,9 @@ class LearningAgent(Agent):
 
         # Take q values for the actual state plus every possible action
         decision_table = self.get_decision_table(state)
-        # Exploration rate
-        self.exploration_rate = 0
-        exploration_rate = self.exploration_rate
-        #exploration_rate = 0.3 * (float(deadline) / self.first_deadline)
-        #exploration_rate = (log(deadline + 0.0001) ) * 0.015
-        #print exploration_rate
-        if exploration_rate < random.random():
-            # take action and corresponding q-value with the maximum q-value from the decision table
-            q_value_now, action = max((value, key) for key, value in decision_table.iteritems())
-        else:
-            # chooses a random action and then corresponding q_value from the decision table
-            action = random.choice(self.env.valid_actions)
-            #action = state[0]
-            q_value_now = decision_table[(action)]
+
+        # take action and corresponding q-value with the maximum q-value from the decision table
+        q_value_now, action = max((value, key) for key, value in decision_table.iteritems())
 
         return (action, q_value_now)
 
@@ -150,7 +139,8 @@ def run():
     # NOTE: You can set enforce_deadline=False while debugging to allow longer trials
 
     # Now simulate it
-    sim = Simulator(e, update_delay=0, display=False)  # create simulator (uses pygame when display=True, if available)
+    sim = Simulator(e, update_delay=0, display=False)
+    #sim = Simulator(e, update_delay=5.0, display=True)  # create simulator (uses pygame when display=True, if available)
     # NOTE: To speed up simulation, reduce update_delay and/or set display=False
 
     sim.run(n_trials=100)  # run for a specified number of trials
