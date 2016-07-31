@@ -22,11 +22,13 @@ class LearningAgent(Agent):
         self.learning_rate = 0.0
         self.discount_factor = 0.1
         self.exploration_rate = 0
+        self.trialNumber = 0
 
 
     def reset(self, destination=None):
-        print "{},{},{},{},{},{},{}".format(self.learning_rate,self.discount_factor,self.exploration_rate,self.first_deadline,self.trialTime,self.totalReward,self.trial_reward)
-
+        #print "{},{},{},{},{},{},{}".format(self.learning_rate,self.discount_factor,self.exploration_rate,self.first_deadline,self.trialTime,self.totalReward,self.trial_reward)
+        self.trialNumber += 1
+        print "Trial {}".format(self.trialNumber)
         self.planner.route_to(destination)
         self.first_deadline = self.env.get_deadline(self)
         self.trial_reward = 0.0
@@ -56,7 +58,7 @@ class LearningAgent(Agent):
         # Execute action and get reward
         reward = self.env.act(self, action)
         if reward < 0:
-            print self.state
+            print self.state + ", action: {}".format(action)
         self.totalReward += reward
         self.trial_reward += reward
 
@@ -69,8 +71,6 @@ class LearningAgent(Agent):
 
     def driving_agent(self, state, t, deadline):
         """Find the best next action"""
-
-        #action = random.choice(self.env.valid_actions)
 
         # Take q values for the actual state plus every possible action
         decision_table = self.get_decision_table(state)
